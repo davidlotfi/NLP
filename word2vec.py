@@ -14,7 +14,7 @@ Molecule= Dataset.iloc[:,7].values
 
 model = Word2Vec(size=10,min_count=1)
 model.build_vocab(Molecule)
-
+model.save("word2vec.model")
 total_exemples=model.corpus_count
 print(total_exemples)
 
