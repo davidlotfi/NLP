@@ -5,7 +5,10 @@ wordarray = ['a','b','d']
 
 model = Word2Vec(size=1,min_count=1)
 model.build_vocab(wordarray)
+wordV = model[model.wv.vocab]
+
 total_examples = model.corpus_count
 
 print(model)
+print(wordV)
 print(total_examples)
