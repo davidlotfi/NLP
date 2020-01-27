@@ -23,10 +23,11 @@ print(total_exemples)
 Molecule2vec= model[model.wv.vocab]
 #print(Molecule2vec)
 print(Molecule2vec.shape)
+print(Molecule2vec)
 #model.train(Molecule2vec,total_examples=10, epochs=10)
 
 # en va imprimer la vecteur de chaque atom exp( N = ?)
 
-c = model.wv['c']
+#c = model.wv['c']
+#print(c)
 
-print(c)
